@@ -1,0 +1,258 @@
+cuda
+SmallIntervalNet(
+  (features): Sequential(
+    (0): Conv2dInterval(1, 6, kernel_size=(5, 5), stride=(2, 2))
+    (1): ReLU()
+    (2): Conv2dInterval(6, 16, kernel_size=(5, 5), stride=(1, 1))
+    (3): ReLU()
+  )
+  (classifier): Sequential(
+    (0): LinearInterval(in_features=1024, out_features=120, bias=True)
+    (1): ReLU()
+    (2): LinearInterval(in_features=120, out_features=50, bias=True)
+    (3): ReLU()
+  )
+  (last_layer): LinearInterval(in_features=50, out_features=10, bias=True)
+)
+epoch usage eps: 0, kappa: 1
+Epoch: 1 Validation Loss: 0.7346 accuracy: 0.7766, robust err: 0.7686, time: 0:00:44
+Epoch: 1 Validation Loss: 0.4099 accuracy: 0.9013, robust err: 0.7649, time: 0:00:44
+epoch usage eps: 0.0035000000000000083, kappa: 0.9650000000000039
+Epoch: 2 Validation Loss: 0.3637 accuracy: 0.9136, robust err: 0.5940, time: 0:00:42
+Epoch: 2 Validation Loss: 0.2824 accuracy: 0.9338, robust err: 0.4121, time: 0:00:42
+epoch usage eps: 0.006999999999999883, kappa: 0.9300000000000077
+Epoch: 3 Validation Loss: 0.2755 accuracy: 0.9388, robust err: 0.3518, time: 0:00:43
+Epoch: 3 Validation Loss: 0.2303 accuracy: 0.9485, robust err: 0.2608, time: 0:00:43
+epoch usage eps: 0.01049999999999974, kappa: 0.8950000000000116
+Epoch: 4 Validation Loss: 0.2386 accuracy: 0.9476, robust err: 0.2480, time: 0:00:40
+Epoch: 4 Validation Loss: 0.2155 accuracy: 0.9549, robust err: 0.2116, time: 0:00:40
+epoch usage eps: 0.013999999999999598, kappa: 0.8600000000000154
+Epoch: 5 Validation Loss: 0.2176 accuracy: 0.9545, robust err: 0.1958, time: 0:00:41
+Epoch: 5 Validation Loss: 0.2141 accuracy: 0.9552, robust err: 0.1881, time: 0:00:41
+epoch usage eps: 0.017499999999999457, kappa: 0.8250000000000193
+Epoch: 6 Validation Loss: 0.2093 accuracy: 0.9581, robust err: 0.1698, time: 0:00:41
+Epoch: 6 Validation Loss: 0.1910 accuracy: 0.9637, robust err: 0.1505, time: 0:00:41
+epoch usage eps: 0.020999999999999314, kappa: 0.7900000000000231
+Epoch: 7 Validation Loss: 0.2010 accuracy: 0.9617, robust err: 0.1521, time: 0:00:42
+Epoch: 7 Validation Loss: 0.1903 accuracy: 0.9654, robust err: 0.1410, time: 0:00:42
+epoch usage eps: 0.024499999999999172, kappa: 0.755000000000027
+Epoch: 8 Validation Loss: 0.1999 accuracy: 0.9639, robust err: 0.1412, time: 0:00:40
+Epoch: 8 Validation Loss: 0.1980 accuracy: 0.9642, robust err: 0.1343, time: 0:00:40
+epoch usage eps: 0.02799999999999903, kappa: 0.7200000000000308
+Epoch: 9 Validation Loss: 0.1979 accuracy: 0.9650, robust err: 0.1302, time: 0:00:41
+Epoch: 9 Validation Loss: 0.1916 accuracy: 0.9664, robust err: 0.1214, time: 0:00:41
+epoch usage eps: 0.03149999999999897, kappa: 0.6850000000000347
+Epoch: 10 Validation Loss: 0.1945 accuracy: 0.9662, robust err: 0.1205, time: 0:00:40
+Epoch: 10 Validation Loss: 0.1835 accuracy: 0.9680, robust err: 0.1091, time: 0:00:40
+epoch usage eps: 0.035000000000000045, kappa: 0.6500000000000385
+Epoch: 11 Validation Loss: 0.1945 accuracy: 0.9674, robust err: 0.1145, time: 0:00:40
+Epoch: 11 Validation Loss: 0.1918 accuracy: 0.9677, robust err: 0.1094, time: 0:00:40
+epoch usage eps: 0.03850000000000112, kappa: 0.6150000000000424
+Epoch: 12 Validation Loss: 0.1965 accuracy: 0.9675, robust err: 0.1097, time: 0:00:40
+Epoch: 12 Validation Loss: 0.1921 accuracy: 0.9675, robust err: 0.1075, time: 0:00:40
+epoch usage eps: 0.04200000000000219, kappa: 0.5800000000000463
+Epoch    13: reducing learning rate of group 0 to 1.0000e-04.
+Epoch: 13 Validation Loss: 0.1983 accuracy: 0.9687, robust err: 0.1071, time: 0:00:41
+Epoch: 13 Validation Loss: 0.1973 accuracy: 0.9685, robust err: 0.1041, time: 0:00:41
+epoch usage eps: 0.04550000000000326, kappa: 0.5450000000000501
+Epoch: 14 Validation Loss: 0.1928 accuracy: 0.9706, robust err: 0.0996, time: 0:00:41
+Epoch: 14 Validation Loss: 0.2040 accuracy: 0.9681, robust err: 0.1027, time: 0:00:41
+epoch usage eps: 0.04900000000000433, kappa: 0.510000000000054
+Epoch: 15 Validation Loss: 0.2085 accuracy: 0.9699, robust err: 0.1045, time: 0:00:40
+Epoch: 15 Validation Loss: 0.2184 accuracy: 0.9676, robust err: 0.1088, time: 0:00:40
+epoch usage eps: 0.0525000000000054, kappa: 0.4999000000000551
+Epoch    16: reducing learning rate of group 0 to 1.0000e-05.
+Epoch: 16 Validation Loss: 0.2184 accuracy: 0.9703, robust err: 0.1097, time: 0:00:37
+Epoch: 16 Validation Loss: 0.2279 accuracy: 0.9676, robust err: 0.1139, time: 0:00:37
+epoch usage eps: 0.056000000000006475, kappa: 0.4999000000000551
+Epoch: 17 Validation Loss: 0.2289 accuracy: 0.9704, robust err: 0.1162, time: 0:00:41
+Epoch: 17 Validation Loss: 0.2420 accuracy: 0.9677, robust err: 0.1209, time: 0:00:41
+epoch usage eps: 0.05950000000000755, kappa: 0.4999000000000551
+Epoch: 18 Validation Loss: 0.2448 accuracy: 0.9703, robust err: 0.1237, time: 0:00:31
+Epoch: 18 Validation Loss: 0.2581 accuracy: 0.9679, robust err: 0.1303, time: 0:00:31
+epoch usage eps: 0.06300000000000827, kappa: 0.4999000000000551
+Epoch: 19 Validation Loss: 0.2613 accuracy: 0.9705, robust err: 0.1321, time: 0:00:34
+Epoch: 19 Validation Loss: 0.2756 accuracy: 0.9679, robust err: 0.1403, time: 0:00:34
+epoch usage eps: 0.06650000000000691, kappa: 0.4999000000000551
+Epoch: 20 Validation Loss: 0.2793 accuracy: 0.9700, robust err: 0.1421, time: 0:00:40
+Epoch: 20 Validation Loss: 0.2934 accuracy: 0.9682, robust err: 0.1489, time: 0:00:40
+epoch usage eps: 0.07000000000000556, kappa: 0.4999000000000551
+Epoch: 21 Validation Loss: 0.3011 accuracy: 0.9697, robust err: 0.1525, time: 0:00:39
+Epoch: 21 Validation Loss: 0.3174 accuracy: 0.9678, robust err: 0.1608, time: 0:00:39
+epoch usage eps: 0.0735000000000042, kappa: 0.4999000000000551
+Epoch: 22 Validation Loss: 0.3266 accuracy: 0.9688, robust err: 0.1663, time: 0:00:40
+Epoch: 22 Validation Loss: 0.3437 accuracy: 0.9674, robust err: 0.1736, time: 0:00:40
+epoch usage eps: 0.07700000000000284, kappa: 0.4999000000000551
+Epoch: 23 Validation Loss: 0.3549 accuracy: 0.9682, robust err: 0.1808, time: 0:00:27
+Epoch: 23 Validation Loss: 0.3717 accuracy: 0.9669, robust err: 0.1880, time: 0:00:27
+epoch usage eps: 0.08050000000000149, kappa: 0.4999000000000551
+Epoch: 24 Validation Loss: 0.3859 accuracy: 0.9677, robust err: 0.1965, time: 0:00:27
+Epoch: 24 Validation Loss: 0.4013 accuracy: 0.9662, robust err: 0.2003, time: 0:00:27
+epoch usage eps: 0.08400000000000013, kappa: 0.4999000000000551
+Epoch: 25 Validation Loss: 0.4166 accuracy: 0.9665, robust err: 0.2122, time: 0:00:26
+Epoch: 25 Validation Loss: 0.4311 accuracy: 0.9652, robust err: 0.2141, time: 0:00:26
+epoch usage eps: 0.08749999999999877, kappa: 0.4999000000000551
+Epoch: 26 Validation Loss: 0.4473 accuracy: 0.9659, robust err: 0.2271, time: 0:00:27
+Epoch: 26 Validation Loss: 0.4620 accuracy: 0.9645, robust err: 0.2289, time: 0:00:27
+epoch usage eps: 0.09099999999999742, kappa: 0.4999000000000551
+Epoch: 27 Validation Loss: 0.4818 accuracy: 0.9658, robust err: 0.2433, time: 0:00:27
+Epoch: 27 Validation Loss: 0.4934 accuracy: 0.9637, robust err: 0.2442, time: 0:00:27
+epoch usage eps: 0.09449999999999606, kappa: 0.4999000000000551
+Epoch: 28 Validation Loss: 0.5150 accuracy: 0.9647, robust err: 0.2590, time: 0:00:32
+Epoch: 28 Validation Loss: 0.5279 accuracy: 0.9624, robust err: 0.2627, time: 0:00:32
+epoch usage eps: 0.0979999999999947, kappa: 0.4999000000000551
+Epoch: 29 Validation Loss: 0.5519 accuracy: 0.9634, robust err: 0.2770, time: 0:00:40
+Epoch: 29 Validation Loss: 0.5645 accuracy: 0.9616, robust err: 0.2814, time: 0:00:40
+epoch usage eps: 0.10149999999999335, kappa: 0.4999000000000551
+Epoch: 30 Validation Loss: 0.5980 accuracy: 0.9623, robust err: 0.3014, time: 0:00:38
+Epoch: 30 Validation Loss: 0.6108 accuracy: 0.9615, robust err: 0.3029, time: 0:00:38
+epoch usage eps: 0.10499999999999199, kappa: 0.4999000000000551
+Epoch: 31 Validation Loss: 0.6492 accuracy: 0.9615, robust err: 0.3255, time: 0:00:38
+Epoch: 31 Validation Loss: 0.6605 accuracy: 0.9607, robust err: 0.3263, time: 0:00:38
+epoch usage eps: 0.10849999999999063, kappa: 0.4999000000000551
+Epoch: 32 Validation Loss: 0.7017 accuracy: 0.9605, robust err: 0.3508, time: 0:00:39
+Epoch: 32 Validation Loss: 0.7122 accuracy: 0.9596, robust err: 0.3517, time: 0:00:39
+epoch usage eps: 0.11199999999998927, kappa: 0.4999000000000551
+Epoch: 33 Validation Loss: 0.7564 accuracy: 0.9585, robust err: 0.3767, time: 0:00:39
+Epoch: 33 Validation Loss: 0.7643 accuracy: 0.9580, robust err: 0.3774, time: 0:00:39
+epoch usage eps: 0.11549999999998792, kappa: 0.4999000000000551
+Epoch: 34 Validation Loss: 0.8103 accuracy: 0.9571, robust err: 0.4038, time: 0:00:38
+Epoch: 34 Validation Loss: 0.8176 accuracy: 0.9557, robust err: 0.4063, time: 0:00:38
+epoch usage eps: 0.11899999999998656, kappa: 0.4999000000000551
+Epoch: 35 Validation Loss: 0.8645 accuracy: 0.9556, robust err: 0.4305, time: 0:00:40
+Epoch: 35 Validation Loss: 0.8697 accuracy: 0.9537, robust err: 0.4319, time: 0:00:40
+epoch usage eps: 0.1224999999999852, kappa: 0.4999000000000551
+Epoch: 36 Validation Loss: 0.9181 accuracy: 0.9537, robust err: 0.4585, time: 0:00:39
+Epoch: 36 Validation Loss: 0.9192 accuracy: 0.9527, robust err: 0.4581, time: 0:00:39
+epoch usage eps: 0.12599999999998523, kappa: 0.4999000000000551
+Epoch: 37 Validation Loss: 0.9710 accuracy: 0.9519, robust err: 0.4867, time: 0:00:39
+Epoch: 37 Validation Loss: 0.9679 accuracy: 0.9517, robust err: 0.4865, time: 0:00:39
+epoch usage eps: 0.12949999999998874, kappa: 0.4999000000000551
+Epoch: 38 Validation Loss: 1.0204 accuracy: 0.9510, robust err: 0.5135, time: 0:00:38
+Epoch: 38 Validation Loss: 1.0159 accuracy: 0.9511, robust err: 0.5116, time: 0:00:38
+epoch usage eps: 0.13299999999999224, kappa: 0.4999000000000551
+Epoch: 39 Validation Loss: 1.0682 accuracy: 0.9480, robust err: 0.5407, time: 0:00:27
+Epoch: 39 Validation Loss: 1.0604 accuracy: 0.9500, robust err: 0.5365, time: 0:00:27
+epoch usage eps: 0.13649999999999574, kappa: 0.4999000000000551
+Epoch: 40 Validation Loss: 1.1149 accuracy: 0.9461, robust err: 0.5662, time: 0:00:27
+Epoch: 40 Validation Loss: 1.1064 accuracy: 0.9483, robust err: 0.5626, time: 0:00:27
+epoch usage eps: 0.13999999999999924, kappa: 0.4999000000000551
+Epoch: 41 Validation Loss: 1.1586 accuracy: 0.9440, robust err: 0.5909, time: 0:00:38
+Epoch: 41 Validation Loss: 1.1490 accuracy: 0.9456, robust err: 0.5890, time: 0:00:38
+epoch usage eps: 0.14350000000000274, kappa: 0.4999000000000551
+Epoch: 42 Validation Loss: 1.2022 accuracy: 0.9412, robust err: 0.6167, time: 0:00:40
+Epoch: 42 Validation Loss: 1.1897 accuracy: 0.9444, robust err: 0.6150, time: 0:00:40
+epoch usage eps: 0.14700000000000624, kappa: 0.4999000000000551
+Epoch: 43 Validation Loss: 1.2475 accuracy: 0.9397, robust err: 0.6450, time: 0:00:39
+Epoch: 43 Validation Loss: 1.2336 accuracy: 0.9426, robust err: 0.6469, time: 0:00:39
+epoch usage eps: 0.15050000000000974, kappa: 0.4999000000000551
+Epoch: 44 Validation Loss: 1.2915 accuracy: 0.9377, robust err: 0.6734, time: 0:00:39
+Epoch: 44 Validation Loss: 1.2762 accuracy: 0.9404, robust err: 0.6799, time: 0:00:39
+epoch usage eps: 0.15400000000001324, kappa: 0.4999000000000551
+Epoch: 45 Validation Loss: 1.3344 accuracy: 0.9354, robust err: 0.7033, time: 0:00:39
+Epoch: 45 Validation Loss: 1.3156 accuracy: 0.9383, robust err: 0.7117, time: 0:00:39
+epoch usage eps: 0.15750000000001674, kappa: 0.4999000000000551
+Epoch: 46 Validation Loss: 1.3720 accuracy: 0.9335, robust err: 0.7357, time: 0:00:40
+Epoch: 46 Validation Loss: 1.3503 accuracy: 0.9364, robust err: 0.7447, time: 0:00:40
+epoch usage eps: 0.16100000000002024, kappa: 0.4999000000000551
+Epoch: 47 Validation Loss: 1.4029 accuracy: 0.9313, robust err: 0.7635, time: 0:00:39
+Epoch: 47 Validation Loss: 1.3811 accuracy: 0.9345, robust err: 0.7746, time: 0:00:39
+epoch usage eps: 0.16450000000002374, kappa: 0.4999000000000551
+Epoch: 48 Validation Loss: 1.4325 accuracy: 0.9299, robust err: 0.7912, time: 0:00:40
+Epoch: 48 Validation Loss: 1.4084 accuracy: 0.9330, robust err: 0.8022, time: 0:00:40
+epoch usage eps: 0.16800000000002724, kappa: 0.4999000000000551
+Epoch: 49 Validation Loss: 1.4570 accuracy: 0.9287, robust err: 0.8165, time: 0:00:39
+Epoch: 49 Validation Loss: 1.4304 accuracy: 0.9320, robust err: 0.8289, time: 0:00:39
+epoch usage eps: 0.17150000000003074, kappa: 0.4999000000000551
+Epoch: 50 Validation Loss: 1.4767 accuracy: 0.9270, robust err: 0.8414, time: 0:00:40
+Epoch: 50 Validation Loss: 1.4428 accuracy: 0.9307, robust err: 0.8529, time: 0:00:40
+epoch usage eps: 0.17500000000003424, kappa: 0.4999000000000551
+Epoch: 51 Validation Loss: 1.4865 accuracy: 0.9259, robust err: 0.8666, time: 0:00:40
+Epoch: 51 Validation Loss: 1.4488 accuracy: 0.9279, robust err: 0.8669, time: 0:00:40
+epoch usage eps: 0.17850000000003774, kappa: 0.4999000000000551
+Epoch: 52 Validation Loss: 1.4952 accuracy: 0.9250, robust err: 0.8829, time: 0:00:38
+Epoch: 52 Validation Loss: 1.4539 accuracy: 0.9258, robust err: 0.8835, time: 0:00:38
+epoch usage eps: 0.18200000000004124, kappa: 0.4999000000000551
+Epoch: 53 Validation Loss: 1.4972 accuracy: 0.9237, robust err: 0.8931, time: 0:00:39
+Epoch: 53 Validation Loss: 1.4615 accuracy: 0.9244, robust err: 0.8910, time: 0:00:39
+epoch usage eps: 0.18550000000004474, kappa: 0.4999000000000551
+Epoch: 54 Validation Loss: 1.5034 accuracy: 0.9213, robust err: 0.8997, time: 0:00:39
+Epoch: 54 Validation Loss: 1.4687 accuracy: 0.9222, robust err: 0.8953, time: 0:00:39
+epoch usage eps: 0.18900000000004824, kappa: 0.4999000000000551
+Epoch: 55 Validation Loss: 1.5050 accuracy: 0.9209, robust err: 0.9015, time: 0:00:39
+Epoch: 55 Validation Loss: 1.4741 accuracy: 0.9199, robust err: 0.8964, time: 0:00:39
+epoch usage eps: 0.19250000000005174, kappa: 0.4999000000000551
+Epoch: 56 Validation Loss: 1.5070 accuracy: 0.9196, robust err: 0.9023, time: 0:00:40
+Epoch: 56 Validation Loss: 1.4782 accuracy: 0.9199, robust err: 0.8978, time: 0:00:40
+epoch usage eps: 0.19600000000005524, kappa: 0.4999000000000551
+Epoch: 57 Validation Loss: 1.5080 accuracy: 0.9181, robust err: 0.9037, time: 0:00:39
+Epoch: 57 Validation Loss: 1.4807 accuracy: 0.9190, robust err: 0.8985, time: 0:00:39
+epoch usage eps: 0.19950000000005874, kappa: 0.4999000000000551
+Epoch: 58 Validation Loss: 1.5093 accuracy: 0.9183, robust err: 0.9056, time: 0:00:39
+Epoch: 58 Validation Loss: 1.4822 accuracy: 0.9193, robust err: 0.8994, time: 0:00:39
+epoch usage eps: 0.20300000000006224, kappa: 0.4999000000000551
+Epoch: 59 Validation Loss: 1.5077 accuracy: 0.9176, robust err: 0.9065, time: 0:00:39
+Epoch: 59 Validation Loss: 1.4832 accuracy: 0.9196, robust err: 0.9005, time: 0:00:39
+epoch usage eps: 0.20650000000006574, kappa: 0.4999000000000551
+Epoch: 60 Validation Loss: 1.5072 accuracy: 0.9181, robust err: 0.9094, time: 0:00:39
+Epoch: 60 Validation Loss: 1.4833 accuracy: 0.9210, robust err: 0.9043, time: 0:00:39
+epoch usage eps: 0.21000000000006924, kappa: 0.4999000000000551
+Epoch: 61 Validation Loss: 1.5060 accuracy: 0.9183, robust err: 0.9122, time: 0:00:39
+Epoch: 61 Validation Loss: 1.4834 accuracy: 0.9222, robust err: 0.9108, time: 0:00:39
+epoch usage eps: 0.21350000000007274, kappa: 0.4999000000000551
+Epoch: 62 Validation Loss: 1.5039 accuracy: 0.9195, robust err: 0.9161, time: 0:00:41
+Epoch: 62 Validation Loss: 1.4817 accuracy: 0.9234, robust err: 0.9155, time: 0:00:41
+epoch usage eps: 0.21700000000007624, kappa: 0.4999000000000551
+Epoch: 63 Validation Loss: 1.4994 accuracy: 0.9201, robust err: 0.9210, time: 0:00:38
+Epoch: 63 Validation Loss: 1.4778 accuracy: 0.9262, robust err: 0.9201, time: 0:00:38
+epoch usage eps: 0.22050000000007974, kappa: 0.4999000000000551
+Epoch: 64 Validation Loss: 1.4921 accuracy: 0.9230, robust err: 0.9241, time: 0:00:38
+Epoch: 64 Validation Loss: 1.4733 accuracy: 0.9275, robust err: 0.9221, time: 0:00:38
+epoch usage eps: 0.22400000000008324, kappa: 0.4999000000000551
+Epoch: 65 Validation Loss: 1.4859 accuracy: 0.9247, robust err: 0.9259, time: 0:00:39
+Epoch: 65 Validation Loss: 1.4691 accuracy: 0.9280, robust err: 0.9240, time: 0:00:39
+epoch usage eps: 0.22750000000008674, kappa: 0.4999000000000551
+Epoch: 66 Validation Loss: 1.4802 accuracy: 0.9255, robust err: 0.9259, time: 0:00:42
+Epoch: 66 Validation Loss: 1.4649 accuracy: 0.9295, robust err: 0.9269, time: 0:00:42
+epoch usage eps: 0.23100000000009024, kappa: 0.4999000000000551
+Epoch: 67 Validation Loss: 1.4735 accuracy: 0.9266, robust err: 0.9278, time: 0:00:38
+Epoch: 67 Validation Loss: 1.4597 accuracy: 0.9299, robust err: 0.9273, time: 0:00:38
+epoch usage eps: 0.23450000000009374, kappa: 0.4999000000000551
+Epoch: 68 Validation Loss: 1.4650 accuracy: 0.9278, robust err: 0.9278, time: 0:00:35
+Epoch: 68 Validation Loss: 1.4519 accuracy: 0.9300, robust err: 0.9270, time: 0:00:35
+epoch usage eps: 0.23800000000009724, kappa: 0.4999000000000551
+Epoch: 69 Validation Loss: 1.4536 accuracy: 0.9285, robust err: 0.9266, time: 0:00:39
+Epoch: 69 Validation Loss: 1.4399 accuracy: 0.9301, robust err: 0.9267, time: 0:00:39
+epoch usage eps: 0.24150000000010075, kappa: 0.4999000000000551
+Epoch: 70 Validation Loss: 1.4424 accuracy: 0.9285, robust err: 0.9261, time: 0:00:40
+Epoch: 70 Validation Loss: 1.4304 accuracy: 0.9295, robust err: 0.9256, time: 0:00:40
+epoch usage eps: 0.24500000000010425, kappa: 0.4999000000000551
+Epoch: 71 Validation Loss: 1.4335 accuracy: 0.9294, robust err: 0.9251, time: 0:00:39
+Epoch: 71 Validation Loss: 1.4224 accuracy: 0.9301, robust err: 0.9250, time: 0:00:39
+epoch usage eps: 0.24850000000010775, kappa: 0.4999000000000551
+Epoch: 72 Validation Loss: 1.4256 accuracy: 0.9300, robust err: 0.9257, time: 0:00:39
+Epoch: 72 Validation Loss: 1.4152 accuracy: 0.9297, robust err: 0.9245, time: 0:00:39
+epoch usage eps: 0.25200000000011125, kappa: 0.4999000000000551
+Epoch: 73 Validation Loss: 1.4173 accuracy: 0.9299, robust err: 0.9255, time: 0:00:40
+Epoch: 73 Validation Loss: 1.4085 accuracy: 0.9306, robust err: 0.9241, time: 0:00:40
+epoch usage eps: 0.25550000000011475, kappa: 0.4999000000000551
+Epoch: 74 Validation Loss: 1.4104 accuracy: 0.9311, robust err: 0.9256, time: 0:00:37
+Epoch: 74 Validation Loss: 1.4019 accuracy: 0.9305, robust err: 0.9238, time: 0:00:37
+epoch usage eps: 0.25900000000011825, kappa: 0.4999000000000551
+Epoch: 75 Validation Loss: 1.4039 accuracy: 0.9306, robust err: 0.9248, time: 0:00:40
+Epoch: 75 Validation Loss: 1.3956 accuracy: 0.9307, robust err: 0.9236, time: 0:00:40
+epoch usage eps: 0.26250000000012175, kappa: 0.4999000000000551
+Epoch: 76 Validation Loss: 1.3983 accuracy: 0.9305, robust err: 0.9249, time: 0:00:40
+Epoch: 76 Validation Loss: 1.3897 accuracy: 0.9299, robust err: 0.9234, time: 0:00:40
+epoch usage eps: 0.26600000000012525, kappa: 0.4999000000000551
+Epoch: 77 Validation Loss: 1.3920 accuracy: 0.9306, robust err: 0.9249, time: 0:00:41
+Epoch: 77 Validation Loss: 1.3842 accuracy: 0.9306, robust err: 0.9231, time: 0:00:41
+epoch usage eps: 0.26950000000012875, kappa: 0.4999000000000551
+Epoch: 78 Validation Loss: 1.3875 accuracy: 0.9298, robust err: 0.9246, time: 0:00:38
+Epoch: 78 Validation Loss: 1.3790 accuracy: 0.9301, robust err: 0.9225, time: 0:00:38
+epoch usage eps: 0.27300000000013225, kappa: 0.4999000000000551
+Epoch: 79 Validation Loss: 1.3823 accuracy: 0.9291, robust err: 0.9249, time: 0:00:41
+Epoch: 79 Validation Loss: 1.3742 accuracy: 0.9302, robust err: 0.9231, time: 0:00:41
+epoch usage eps: 0.27650000000013575, kappa: 0.4999000000000551
+Epoch: 80 Validation Loss: 1.3772 accuracy: 0.9299, robust err: 0.9250, time: 0:00:40
+Epoch: 80 Validation Loss: 1.3698 accuracy: 0.9308, robust err: 0.9234, time: 0:00:40
