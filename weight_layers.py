@@ -40,3 +40,4 @@ class LinearInterval(nn.Linear):
 
         # zwracam jako jednen tensor
         return torch.cat([lower, upper], dim=1)
+
